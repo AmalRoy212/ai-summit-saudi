@@ -132,7 +132,7 @@ export default function DelegateRegistration() {
 
         form.resetFields();
       } else {
-        message.error("Error happend while saving your request");
+        message.error("You're Already Registered");
       }
     } catch (error) {
       console.error("Request failed:", error);
