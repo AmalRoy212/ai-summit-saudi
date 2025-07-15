@@ -12,9 +12,9 @@ const data = [
     imgSource: "/images/chart/img4.png",
   },
   {
-    backgroundName: "DAY 1 THEME",
+    backgroundName: "DAY 2 THEME",
     configHeadingOne:
-      "Intelligent by Design: Building Saudi’s Future with Data & AI",
+      "Simplify.AI: Accelerating Digital Transformation with No Code, Low Code & Automation",
     p: `In a fast-paced digital economy, simplicity is power. Day 2 focuses on
         how organizations can accelerate transformation using intuitive, visual
         platforms that enable faster development, automation, and execution with
