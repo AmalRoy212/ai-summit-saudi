@@ -4,6 +4,7 @@ import NewsTicker from "./NewsTicker";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import NewCarousel from "./newCarousel";
+import NewsCarousel from "./NewsCarousels";
 
 const NewsLetter: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -24,7 +25,7 @@ const NewsLetter: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="md:w-[95%] max-w-7xl mx-auto flex flex-col bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
+    <div className="md:w-[95%] max-w-7xl mx-auto flex flex-col md:mx-auto pt-5 md:px-5 rounded-2xl">
       <motion.div
         variants={slideInFromTop}
         className="text-[40px] font-medium text-center text-gray-200"
@@ -43,7 +44,8 @@ const NewsLetter: React.FC = () => {
       </div> */}
       <div className="flex flex-col md:flex-row md:my-20 z-10 gap-x-5">
         <div className="w-full">
-          <NewCarousel />
+          {/* <NewCarousel /> */}
+          {/* <NewsCarousel /> */}
         </div>
       </div>
     </div>

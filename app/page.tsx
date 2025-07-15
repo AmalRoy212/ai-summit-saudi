@@ -26,6 +26,10 @@ import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import SummitKeyThemes from "@/ui/main/key-thems/FirstTheme";
 import MarketOverview from "@/ui/sub/index/aboutEvent/MarketOverview";
+import Carousel from "@/ui/main/index/news/NewsCarousel";
+import NewCarousel from "@/ui/main/index/news/newCarousel";
+import NewsTicker from "@/ui/main/index/news/NewsTicker";
+import NewsCarousel from "@/ui/main/index/news/NewsCarousels";
 
 export default function Home() {
   // useEffect(() => {
@@ -51,14 +55,18 @@ export default function Home() {
         {/* <ChartsHolder /> */}
         {/* <AwardsProvider /> */}
         <SummitKeyThemes />
-        <TopicsProvide />
+        {/* <TopicsProvide /> */}
         {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
         {/* <Sponsors /> */}
         <WhitePaper />
         {/* <StartUp /> */}
         {/* <End /> */}
-        <NewsLetter />
+        {/* <Carousel /> */}
+        {/* <NewsLetter /> */}
+        <NewsCarousel />
+        {/* <NewCarousel /> */}
+        {/* <NewsTicker /> */}
         {/* <div className="w-full flex justify-center items-center">
           <EventName />
         </div> */}
