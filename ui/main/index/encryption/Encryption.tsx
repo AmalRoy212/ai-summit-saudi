@@ -1,18 +1,12 @@
 "use client";
+import Typography from "@/ui/sub/headers/Typography";
 import SummitAttendees from "../attendies/Attedies";
 
 export default function ExtraCards() {
   return (
     <section id="attendies">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-[40px] font-medium text-center text-gray-200">
-          ATTENDEES
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            {" "}
-            &{" "}
-          </span>
-          INDUSTRIES
-        </div>
+        <Typography first="ATTENDEES" middle="&" last="INDUSTRIES" />
         <div className="py-12 md:py-1 border-gray-800">
           {/* Section header */}
           {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">

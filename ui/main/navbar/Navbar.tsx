@@ -57,9 +57,9 @@ function Navbar() {
             >
               SPEAKERS
             </Link>
-            <a href="/agenda" className="cursor-pointer text-xs">
+            {/* <a href="/agenda" className="cursor-pointer text-xs">
               AGENDA
-            </a>
+            </a> */}
             <a
               href={pathname === "/" ? "/all-speakers" : "/"}
               className="cursor-pointer text-xs"

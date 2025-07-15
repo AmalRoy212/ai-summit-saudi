@@ -5,6 +5,7 @@ import ProgressBar from "../index/progressbar/bar/ProgressBar";
 import SubHeadings from "@/ui/sub/headers/SubHeadings";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
+import Typography from "@/ui/sub/headers/Typography";
 
 function Cards() {
   const progressData = [
@@ -59,15 +60,7 @@ function Cards() {
 
   return (
     <>
-      <motion.div
-        variants={slideInFromTop}
-        className="text-[40px] font-medium text-center text-gray-200 mb-10"
-      >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          BY{" "}
-        </span>
-        INDUSTRY
-      </motion.div>
+      <Typography first="" middle="BY" last="INDUSTRY" />
       <CardsProvider />
       {/* <div className="md:flex justify-center items-center gap-5">
         <div className="md:w-1/2 h-full">

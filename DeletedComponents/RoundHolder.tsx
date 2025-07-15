@@ -1,6 +1,6 @@
 import React from "react";
-import RoundCard from "./RoundCard";
-import UnderLineCards from "./UnderLineCards";
+import RoundCard from "../ui/main/who/RoundCard";
+import UnderLineCards from "../ui/main/who/UnderLineCards";
 import SubHeadings from "@/ui/sub/headers/SubHeadings";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";

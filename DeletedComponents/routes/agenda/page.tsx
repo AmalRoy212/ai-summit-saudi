@@ -1,6 +1,6 @@
 "use client";
 
-import AgendaHolder from "@/ui/main/agenda/AgendaHolder";
+import AgendaHolder from "@/DeletedComponents/agenda/AgendaHolder";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";

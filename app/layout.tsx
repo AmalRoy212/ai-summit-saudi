@@ -27,15 +27,15 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <div className="w-full h-screen flex items-center justify-center">
+        {/* <div className="w-full h-screen flex items-center justify-center">
           <img
             className="w-1/2 h-screen object-contain"
             src="https://daru-capital.com/wp-content/uploads/2022/11/under-construction-pages-1-image-library.jpg"
             alt=""
           />
-        </div>
-        {/* <Navbar />
-        {children} */}
+        </div> */}
+        <Navbar />
+        {children}
         {/* <Footer /> */}
       </body>
     </html>

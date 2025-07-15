@@ -168,8 +168,8 @@ function Occation() {
           </div>
         </motion.div>
       </div>
-      <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent py-8">
-        OVERVIEW
+      {/* <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent py-8">
+       MARKET OVERVIEW
       </h1>
       <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-fill-transparent"></div>
       <p className="text-white md:px-20 px-4 text-base text-center">
@@ -241,7 +241,7 @@ function Occation() {
           <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
           <p className="text-white text-tick">Al-Khobar</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

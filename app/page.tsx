@@ -14,16 +14,18 @@ import Hero from "@/ui/main/index/hero/Hero";
 import Sponsors from "@/ui/main/index/sponsors/Sponsors";
 import StartUp from "@/ui/main/index/startUp/StartUp";
 import TopicsProvide from "@/ui/main/index/topics/TopicsProvide";
-import StarsCanvas from "@/ui/main/starBackground/StarBackground";
+// import StarsCanvas from "@/ui/main/starBackground/StarBackground";
 import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
 import NewsLetter from "@/ui/main/index/news/NewsLetter";
 import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 import EventName from "@/ui/main/event-name/EventName";
-import RoundHolder from "@/ui/main/who/RoundHolder";
+import RoundHolder from "@/DeletedComponents/RoundHolder";
 import Footer from "@/ui/main/footer/Footer";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
+import SummitKeyThemes from "@/ui/main/key-thems/FirstTheme";
+import MarketOverview from "@/ui/sub/index/aboutEvent/MarketOverview";
 
 export default function Home() {
   useEffect(() => {
@@ -35,18 +37,20 @@ export default function Home() {
 
   return (
     <main className="h-full w-full md:w-[100%] overflow-hidden">
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div className="flex flex-col ">
         <Hero />
         <DetailsHolder />
+        <MarketOverview />
         <Card />
         {/* <SpeakerProfiles /> */}
-        <CaroselHolder />
+        {/* <CaroselHolder /> */}
         <Encryption />
         <Cards />
-        <RoundHolder />
+        {/* <RoundHolder /> */}
         {/* <ChartsHolder /> */}
         {/* <AwardsProvider /> */}
+        <SummitKeyThemes />
         <TopicsProvide />
         {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
@@ -59,7 +63,7 @@ export default function Home() {
           <EventName />
         </div> */}
         {/* <ContactUs /> */}
-        <FooterHolder/>
+        <FooterHolder />
       </div>
     </main>
   );
