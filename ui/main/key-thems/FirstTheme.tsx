@@ -25,7 +25,7 @@ const data = [
 
 export default function FocusChart() {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <Typography first="KEY" middle="SUMMIT" last="THEMES" />
       {data.map((item, index) => (
         <div

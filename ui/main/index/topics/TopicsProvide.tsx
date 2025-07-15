@@ -83,7 +83,7 @@ function TopicsProvide() {
   // ];
 
   return (
-    <div id="topics" className="mt-20 px-10">
+    <div id="topics" className="mt-20 max-w-7xl mx-auto px-10">
       <DetailHeading
         nanoHeading=""
         mainHeading="KEY TOPICS OF DISCUSSION"

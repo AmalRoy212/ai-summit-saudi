@@ -24,7 +24,7 @@ const NewsLetter: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="md:w-[95%] flex flex-col bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
+    <div className="md:w-[95%] max-w-7xl mx-auto flex flex-col bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
       <motion.div
         variants={slideInFromTop}
         className="text-[40px] font-medium text-center text-gray-200"

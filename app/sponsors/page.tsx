@@ -7,9 +7,9 @@ import React, { useEffect } from "react";
 
 const sponsorsPage: React.FC = () => {
 
-  useEffect(() => {
-    localStorage.setItem("reloaded", "true");
-  }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("reloaded", "true");
+  // }, []);
 
 
   return (

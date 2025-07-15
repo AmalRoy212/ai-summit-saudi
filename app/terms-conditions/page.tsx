@@ -6,9 +6,9 @@ import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";
 
 const Page: React.FC = () => {
-  useEffect(() => {
-    localStorage.setItem("reloaded", "true");
-  }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("reloaded", "true");
+  // }, []);
 
   return (
     <div className="bg-contain bg-center flex flex-col justify-center items-center">

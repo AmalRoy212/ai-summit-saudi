@@ -85,7 +85,7 @@ export default function MarketOverview() {
   ];
 
   return (
-    <div className="bg-[#0b0b1d] text-white py-12 px-4 md:px-10 my-10 min-h-[100vh] z-10">
+    <div className="bg-[#0b0b1d] max-w-7xl mx-auto text-white py-12 px-4 md:px-10 my-10 min-h-[100vh] z-10">
       {/* Paragraph + Right-side Background Image */}
       <h1 className="text-4xl font-bold text-white py-8">MARKET OVERVIEW</h1>
       <div className="flex flex-col md:flex-row items-start justify-end gap-6">
