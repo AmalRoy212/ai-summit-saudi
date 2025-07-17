@@ -88,7 +88,7 @@ const items = [
   },
 ];
 
-const ITEM_HEIGHT = 110; // approx. height of each card on the right
+const ITEM_HEIGHT = 120;
 
 const NewsCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -100,7 +100,6 @@ const NewsCarousel: React.FC = () => {
         prevIndex === items.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -114,59 +113,59 @@ const NewsCarousel: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <div>
-        <motion.div
+    <div className="bg-[#0c1222] w-full py-10 px-6">
+      <motion.div
         variants={slideInFromTop}
-        className="text-[40px] font-medium text-center text-gray-200"
+        className="text-[40px] font-extrabold text-white text-left mb-6"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          NEWS & ARTICLES{" "}
-        </span>
+        NEWS & ARTICLES
       </motion.div>
-      <div className="flex flex-col md:flex-row w-full h-full gap-4 p-4">
-        {/* LEFT SECTION - FEATURED */}
-        <div className="flex-1 bg-black text-white rounded-lg overflow-hidden shadow-lg">
-          <img
-            src={items[currentIndex].imageUrl}
-            alt={items[currentIndex].title}
-            className="w-full h-[300px] object-cover"
-          />
+
+      <div className="flex flex-col md:flex-row w-full gap-6">
+        {/* Left Side - Featured Article */}
+        <div className="flex-1 bg-[#1b1e32] h-[490px] text-white rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full h-[300px]">
+            <img
+              src={items[currentIndex].imageUrl}
+              alt={items[currentIndex].title}
+              className="absolute inset-0 w-full h-full object-cover opacity-30"
+            />
+            <div className="absolute inset-0 flex flex-col justify-center px-6 z-10">
+              <h2 className="text-4xl font-bold mb-2">
+                {items[currentIndex].title}
+              </h2>
+            </div>
+          </div>
           <div className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
-              {items[currentIndex].title}
-            </h2>
             <p className="text-sm">{items[currentIndex].content}</p>
             <a
               href={items[currentIndex].link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 px-4 py-2 bg-white text-black rounded-md font-medium"
+              className="inline-block mt-4 px-4 py-2 border-2 text-white rounded-md font-medium"
             >
               Read More
             </a>
           </div>
         </div>
 
-        {/* RIGHT SECTION - AUTO SCROLLING LIST */}
-        <div
-          className="w-full md:w-[30%] h-[440px] overflow-hidden relative"
-          style={{ scrollbarWidth: "none" }}
-        >
+        {/* Right Side - Scrolling List */}
+        <div className="w-full md:w-[30%] h-[490px] overflow-hidden">
           <div
             ref={listRef}
-            className="space-y-2 h-full overflow-hidden"
+            className="space-y-3 h-full overflow-hidden"
             style={{
-              scrollbarWidth: "none", // Firefox
-              msOverflowStyle: "none", // IE 10+
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
             }}
           >
             {items.map((item, index) => (
               <div
                 key={item.id}
-                className={`flex gap-3 p-3 rounded-lg transition-all duration-300 ${
+                className={`flex gap-3 p-3 rounded-md transition-all duration-300 ${
                   index === currentIndex
                     ? "bg-gray-300 text-black"
-                    : "bg-gray-900 text-white"
+                    : "bg-[#2c2f48] text-white"
                 }`}
                 style={{
                   height: `${ITEM_HEIGHT}px`,
@@ -175,23 +174,24 @@ const NewsCarousel: React.FC = () => {
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  className="w-24 h-16 object-cover rounded"
+                  className="w-20 h-16 object-cover rounded"
                 />
-                <div>
-                  <h3 className="text-sm font-semibold">{item.title}</h3>
+                <div className="overflow-hidden">
+                  <h3 className="text-sm font-semibold line-clamp-2">
+                    {item.title}
+                  </h3>
                   <p className="text-xs mt-1 line-clamp-2">{item.content}</p>
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Hide scrollbar visually */}
-          <style jsx>{`
-            div::-webkit-scrollbar {
-              display: none;
-            }
-          `}</style>
         </div>
+
+        <style jsx>{`
+          div::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
       </div>
     </div>
   );
