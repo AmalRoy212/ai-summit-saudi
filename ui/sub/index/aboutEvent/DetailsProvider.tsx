@@ -17,7 +17,7 @@ function DetailsProvider() {
         data-aos="fade-up-left"
         className="flex flex-col md:w-2/4 w-full md:h-screen h-auto justify-center items-center p-5"
       >
-        <p className="text-[12px] text-gray-400 dark:text-gray-400 md:p-5 text-justify">
+        <p className="text-[12px] text-white md:p-5 text-justify">
           The Intelligent Data, AI & Automation Summit (IDA) is a premier
           business-centric event driven by thought leadership, focusing on the
           latest challenges and technological trends in Saudi's innovation

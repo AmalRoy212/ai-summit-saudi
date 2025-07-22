@@ -5,7 +5,12 @@ import { ICounter } from "./ICounter";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 
-export const Counter: React.FC<ICounter> = ({ label, countTo, duration, index }) => {
+export const Counter: React.FC<ICounter> = ({
+  label,
+  countTo,
+  duration,
+  index,
+}) => {
   const [counterValue, setCounterValue] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -36,6 +41,7 @@ export const Counter: React.FC<ICounter> = ({ label, countTo, duration, index })
 
   const animateCounter = () => {
     let start = 0;
+    if (typeof countTo === "string") return setCounterValue(countTo);
     const step = Math.ceil(countTo / duration);
 
     const timer = setInterval(() => {
@@ -55,7 +61,9 @@ export const Counter: React.FC<ICounter> = ({ label, countTo, duration, index })
       ref={ref}
       data-aos-duration={index * 300}
       data-aos="fade-left"
-      className={`md:w-1/5 sm:w-1/2 p-2 flex justify-center items-center flex-col-reverse ${isVisible ? "aos-animate" : ""}`}
+      className={`md:w-1/5 sm:w-1/2 p-2 flex justify-center items-center flex-col-reverse ${
+        isVisible ? "aos-animate" : ""
+      }`}
     >
       <motion.div
         variants={slideInFromTop}
@@ -66,7 +74,8 @@ export const Counter: React.FC<ICounter> = ({ label, countTo, duration, index })
       <div className="w-[150px] h-[150px] flex justify-center items-center rounded-full bg-gradient-to-r from-purple-500 to-cyan-500">
         <span className="font-extrabold text-5xl text-white">
           {" "}
-          {counterValue}{"+"}
+          {counterValue}
+          {typeof counterValue !== "string" && "+"}
         </span>
       </div>
     </div>

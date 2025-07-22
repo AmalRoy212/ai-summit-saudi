@@ -519,15 +519,17 @@ export default function DelegateRegistration() {
             <Select className="h-[40px]">
               <Option value="$50,000 - $100,000">$50,000 - $100,000</Option>
               <Option value="$100,000 - $200,000">$100,000 - $200,000</Option>
-              <Option value="$50,000 - $100,000">$200,000 - $300,000</Option>
-              <Option value="$50,000 - $100,000">$300,000 - $400,000</Option>
-              <Option value="$50,000 - $100,000">$400,000 - $500,000</Option>
-              <Option value="$50,000 - $100,000">$500,000 - $600,000</Option>
-              <Option value="$50,000 - $100,000">$600,000 - $700,000</Option>
-              <Option value="$50,000 - $100,000">$700,000 - $800,000</Option>
-              <Option value="$50,000 - $100,000">$800,000 - $900,000</Option>
-              <Option value="$50,000 - $100,000">$900,000 - $1,000,000</Option>
-              <Option value="$50,000 - $100,000">$1,000,000 and above</Option>
+              <Option value="$200,000 - $300,000">$200,000 - $300,000</Option>
+              <Option value="$300,000 - $400,000">$300,000 - $400,000</Option>
+              <Option value="$400,000 - $500,000">$400,000 - $500,000</Option>
+              <Option value="$500,000 - $600,000">$500,000 - $600,000</Option>
+              <Option value="$600,000 - $700,000">$600,000 - $700,000</Option>
+              <Option value="$700,000 - $800,000">$700,000 - $800,000</Option>
+              <Option value="$800,000 - $900,000">$800,000 - $900,000</Option>
+              <Option value="$900,000 - $1,000,000">
+                $900,000 - $1,000,000
+              </Option>
+              <Option value="$1,000,000 and above">$1,000,000 and above</Option>
             </Select>
           </Form.Item>
           <Form.Item

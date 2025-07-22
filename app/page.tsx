@@ -18,7 +18,7 @@ import TopicsProvide from "@/ui/main/index/topics/TopicsProvide";
 // import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 // import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 // import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
-import NewsLetter from "@/ui/main/index/news/NewsLetter";
+// import NewsLetter from "@/ui/main/index/news/NewsLetter";
 import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 // import EventName from "@/ui/main/event-name/EventName";
 // import RoundHolder from "@/DeletedComponents/RoundHolder";
@@ -26,9 +26,9 @@ import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import SummitKeyThemes from "@/ui/main/key-thems/FirstTheme";
 import MarketOverview from "@/ui/sub/index/aboutEvent/MarketOverview";
-import Carousel from "@/ui/main/index/news/NewsCarousel";
-import NewCarousel from "@/ui/main/index/news/newCarousel";
-import NewsTicker from "@/ui/main/index/news/NewsTicker";
+// import Carousel from "@/ui/main/index/news/NewsCarousel";
+// import NewCarousel from "@/ui/main/index/news/newCarousel";
+// import NewsTicker from "@/ui/main/index/news/NewsTicker";
 import NewsCarousel from "@/ui/main/index/news/NewsCarousels";
 
 export default function Home() {
