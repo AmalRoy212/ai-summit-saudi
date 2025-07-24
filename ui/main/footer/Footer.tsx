@@ -214,6 +214,13 @@ const Footer = () => {
             <RxSewingPin className="mr-2" />
             Riyadh, Saudi Arabia
           </p>
+          <a
+            href="https://www.linkedin.com/company/capstonemena"
+            target="_blank"
+            className="text-xs text-gray-300 justify-center hover:text-purple-500 flex items-center w-full"
+          >
+            <RxLinkedinLogo className="mr-2" /> Follow us on LinkedIn
+          </a>
         </div>
 
         {/* Middle Column: Registrations */}
@@ -257,19 +264,14 @@ const Footer = () => {
 
         {/* Organized By Section */}
         <div className="flex flex-col items-start space-y-6">
-          <div className="font-bold text-sm text-white">Organized By</div>
+          <div className="font-bold text-sm text-white w-full flex justify-center">
+            Organized By
+          </div>
           <img
             src="/images/logos/logo.png"
             className="w-36 object-contain mb-4"
             alt="Event Logo"
           />
-          <a
-            href="https://www.linkedin.com/company/capstonemena"
-            target="_blank"
-            className="text-xs text-gray-300 justify-center hover:text-purple-500 flex items-center w-full"
-          >
-            <RxLinkedinLogo className="mr-2" />
-          </a>
         </div>
       </div>
 
