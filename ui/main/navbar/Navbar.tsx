@@ -61,7 +61,13 @@ function Navbar() {
               AGENDA
             </a> */}
             <a
-              href={pathname === "/" ? "/all-speakers" : "/"}
+              href={pathname === "/" ? "/#themes" : "/"}
+              className="cursor-pointer text-xs"
+            >
+              KEY THEMES
+            </a>
+            <a
+              href={pathname === "/" ? "/#sponsors&partners" : "/"}
               className="cursor-pointer text-xs"
             >
               SPONSORS & PARTNERS

@@ -96,8 +96,7 @@ function Sponsors() {
       <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
         <h4 className="text-center text-lg text-white">
           <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
-            {/* ASSOCIATION PARTNER */}
-            LEAD SPONSOR
+            LEAD SPONSORS
           </span>
         </h4>
         <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
@@ -122,9 +121,15 @@ function Sponsors() {
             ROUNDTABLE PARTNER
           </span>
         </h4>
-        <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
-          <SponsordsData imgSrc="logo6.jpeg" />
-          <SponsordsData imgSrc="logo7.jpeg" />
+        <div className="w-full flex md:flex-row flex-col justify-center items-center">
+          <div className="flex flex-row md:-ml-5">
+            <span className="ml-5">
+              <SponsordsData imgSrc="logo6.jpeg" />
+            </span>
+            <span className="-ml-5">
+              <SponsordsData imgSrc="logo7.jpeg" />
+            </span>
+          </div>
         </div>
       </div>
 
@@ -156,6 +161,19 @@ function Sponsors() {
           </span>
         </h4>
         <SponsordsData imgSrc="logo11.jpeg" />
+      </div>
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            ASSOCIATION PARTNER
+          </span>
+        </h4>
+        <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
+          <SponsordsData imgSrc="logo12.jpeg" />
+          <SponsordsData imgSrc="logo13.jpeg" />
+          <SponsordsData imgSrc="logo14.jpeg" />
+        </div>
       </div>
     </div>
   );
