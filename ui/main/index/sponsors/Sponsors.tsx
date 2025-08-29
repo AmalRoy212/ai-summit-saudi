@@ -145,7 +145,7 @@ function Sponsors() {
       <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
         <h4 className="text-center text-lg text-white">
           <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
-            EXHIBITING PARTNER
+            EXHIBITING PARTNERS
           </span>
         </h4>
         <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
@@ -166,7 +166,7 @@ function Sponsors() {
       <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
         <h4 className="text-center text-lg text-white">
           <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
-            ASSOCIATION PARTNER
+            ASSOCIATION PARTNERS
           </span>
         </h4>
         <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
