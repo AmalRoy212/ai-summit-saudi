@@ -51,12 +51,12 @@ function Navbar() {
             >
               HAPPENINGS
             </a>
-            <Link
+            {/* <Link
               href={pathname === "/" ? "all-speakers" : "/"}
               className="cursor-pointer text-xs"
             >
               SPEAKERS
-            </Link>
+            </Link> */}
             {/* <a href="/agenda" className="cursor-pointer text-xs">
               AGENDA
             </a> */}

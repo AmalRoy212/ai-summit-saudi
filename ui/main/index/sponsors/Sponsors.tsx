@@ -8,6 +8,7 @@ import SponsordsData from "@/ui/sub/index/sponsors/SponsordsData";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import { Button, Modal } from "antd";
+import Typography from "@/ui/sub/headers/Typography";
 
 function ModalComponent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -81,55 +82,80 @@ function Sponsors() {
   };
   return (
     <div id="sponsors&partners" className="mainContainer">
-      <motion.div
-        variants={slideInFromTop}
-        className="text-[40px] font-medium text-center text-gray-200 mb-10"
-      >
-        {/* Some of the  */}
-        SPONSORS
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          {" "}
-          &{" "}
-        </span>
-        PARTNERS
-        {/* from the Recent Past */}
-      </motion.div>
-      <h3 className="text-transparent text-xl text-center text-white">
-        MANAGED BY
-      </h3>
-      <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
-        {managingSponsors.map((img) => img && <SponsordsData imgSrc={img} />)}
+      <Typography first="SPONSORS" middle="&" last="PARTNERS" />
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            KNOWLEDGE PARTNER
+          </span>
+        </h4>
+        <SponsordsData imgSrc="logo1.jpeg" />
       </div>
-      <div className="w-full flex flex-row justify-center items-center gap-x-6">
-        <div>
-          <h3 className="text-transparent text-xl text-center text-white">
-            HOST PARTNER
-          </h3>
-          <SponsordsData imgSrc="almena.jpg" />
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            {/* ASSOCIATION PARTNER */}
+            LEAD SPONSOR
+          </span>
+        </h4>
+        <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
+          <SponsordsData imgSrc="logo2.jpeg" />
+          <SponsordsData imgSrc="logo3.jpeg" />
+          <SponsordsData imgSrc="logo4.jpeg" />
         </div>
       </div>
-      <div className="w-full flex flex-row justify-center items-center gap-x-6">
-        <div>
-          <h3 className="text-xl text-center text-white">GOLD SPONSOR</h3>
-          <ModalComponent />
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            GOLD SPONSOR
+          </span>
+        </h4>
+        <SponsordsData imgSrc="logo5.jpeg" />
+      </div>
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            ROUNDTABLE PARTNER
+          </span>
+        </h4>
+        <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
+          <SponsordsData imgSrc="logo6.jpeg" />
+          <SponsordsData imgSrc="logo7.jpeg" />
         </div>
       </div>
-      <div className="w-full flex flex-row justify-center items-center gap-x-6">
-        <div>
-          <h3 className="text-xl text-center text-white">EXHIBITING SPONSOR</h3>
-          <div className="ml-2">
-            <SponsordsData imgSrc="zoho.jpg" />
-          </div>
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            BUSINESS AI PARTNER
+          </span>
+        </h4>
+        <SponsordsData imgSrc="logo8.jpeg" />
+      </div>
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            EXHIBITING PARTNER
+          </span>
+        </h4>
+        <div className="w-full flex gap-x-6 md:flex-row flex-col justify-center items-center">
+          <SponsordsData imgSrc="logo9.jpeg" />
+          <SponsordsData imgSrc="logo10.jpeg" />
         </div>
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-x-6">
-        <h3 className="text-transparent text-xl text-center text-white">
-          MEDIA PARTNER
-        </h3>
-        <div className="w-full flex flex-row justify-center items-center gap-x-6">
-          <SponsordsData imgSrc="mid.jpg" />
-          <SponsordsData imgSrc="ai-time.jpg" />
-        </div>
+
+      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+        <h4 className="text-center text-lg text-white">
+          <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
+            BI & ANALYTICS PARTNER
+          </span>
+        </h4>
+        <SponsordsData imgSrc="logo11.jpeg" />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import Card from "@/ui/main/index/cards/Card";
 import Encryption from "@/ui/main/index/encryption/Encryption";
 // import End from "@/ui/main/index/end/End";
 import Hero from "@/ui/main/index/hero/Hero";
-// import Sponsors from "@/ui/main/index/sponsors/Sponsors";
+import Sponsors from "@/ui/main/index/sponsors/Sponsors";
 // import StartUp from "@/ui/main/index/startUp/StartUp";
 import TopicsProvide from "@/ui/main/index/topics/TopicsProvide";
 // import StarsCanvas from "@/ui/main/starBackground/StarBackground";
@@ -58,7 +58,7 @@ export default function Home() {
         {/* <TopicsProvide /> */}
         {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
-        {/* <Sponsors /> */}
+        <Sponsors />
         <WhitePaper />
         {/* <StartUp /> */}
         {/* <End /> */}
