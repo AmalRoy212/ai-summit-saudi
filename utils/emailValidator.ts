@@ -1,4 +1,4 @@
-const publicDomains = ["yahoo.com", "outlook.com", "hotmail.com", "aol.com", "icloud.com"];
+const publicDomains = ["aol.com", "icloud.com"];
 
 export const validateEmail = (email: string) => {
   const domain = email.split('@')[1];
