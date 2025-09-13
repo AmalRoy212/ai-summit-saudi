@@ -113,7 +113,6 @@ export default function DelegateRegistration() {
       type: "Delegate",
       link: "https://docs.google.com/spreadsheets/d/1Xh6Km0TuWxBFU9qncjK8Zfl32xRXH4rjEoAEBN72_ug/edit?gid=0#gid=0",
     };
-
     try {
       const response = await fetch("/api/delegates/register", {
         method: "POST",

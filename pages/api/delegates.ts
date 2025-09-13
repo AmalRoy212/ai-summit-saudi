@@ -11,7 +11,7 @@ export default async function handler(req : NextApiRequest, res : NextApiRespons
 
   if (req.method === 'GET') {
     try {
-      const data = await getData('delegates'); // Fetch the latest data from DB
+      const data = await getData('delegates_one'); // Fetch the latest data from DB
       res.status(200).json({ success: true, data });
     } catch (error : any) {
       res.status(500).json({ success: false, message: error.message });
