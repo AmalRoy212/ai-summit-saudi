@@ -71,11 +71,12 @@ function IndexHeader() {
             October <br className="md:flex hidden" /> 2025
             {/* 7-8 MAY 2025 */}
           </span>
-          <span className="flex items-center gap-3">
+          <span className="flex items-center gap-3 font[700]">
             <span className="font-bold text-4xl flex gap-x-2">
-              <FaLocationDot /> RIYADH,
+              <FaLocationDot />
             </span>{" "}
-            KINGDOM OF <br /> SAUDI ARABIA
+               CROWNE PLAZA RIYADH AL WAHA, <br /> RIYADH SAUDI ARABIA
+            {/* RIYADH <br /> SAUDI ARABIA */}
           </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">

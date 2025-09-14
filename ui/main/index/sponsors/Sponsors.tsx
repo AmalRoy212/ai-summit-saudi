@@ -115,7 +115,7 @@ function Sponsors() {
         <SponsordsData imgSrc="logo5.jpeg" />
       </div>
 
-      <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
+      {/* <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
         <h4 className="text-center text-lg text-white">
           <span className="px-5 py-1 border rounded-xl bg-gradient-to-r from-purple-500/70 to-cyan-500/70">
             ROUNDTABLE PARTNER
@@ -131,7 +131,7 @@ function Sponsors() {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div data-aos="zoom-in" className="w-full flex flex-col gap-y-6 justify-center items-center mb-10">
         <h4 className="text-center text-lg text-white">
