@@ -27,7 +27,7 @@ export function validateDelegateFormData(formData: DelegateForm): boolean {
   }
 
   // Validate email format
-  const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+  const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,15})+$/;
   if (!emailRegex.test(formData.email) || (formData.referEmail && !emailRegex.test(formData.referEmail))) {
       console.log("Invalid email format.");
       return false;

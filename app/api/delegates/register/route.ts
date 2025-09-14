@@ -6,7 +6,6 @@ export async function POST(request: NextRequest) {
   try {
     // Parse the request body to get form data
     const formData = await request.json();
-console.log(formData);
 
     // You can validate the data here (Optional)
     // For example, if you have a validation utility
