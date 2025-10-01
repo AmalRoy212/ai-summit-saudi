@@ -122,7 +122,7 @@ export default function DelegateRegistration() {
         body: JSON.stringify(values),
       });
 
-      await sendNotificationMail(emailParams);
+      // await sendNotificationMail(emailParams);
 
       if (response.ok) {
         message.success(
