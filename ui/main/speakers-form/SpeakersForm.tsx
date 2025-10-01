@@ -47,7 +47,7 @@ const SpeakersEnquiryForm: React.FC = () => {
         body: JSON.stringify(values),
       });
 
-      await sendNotificationMail(emailParams);
+      // await sendNotificationMail(emailParams);
 
       if (response.ok) {
         message.success("Form submitted successfully!");
