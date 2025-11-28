@@ -41,9 +41,10 @@ export default function RootLayout({
     <h1 className="text-white text-3xl">We Will Be Back Soon</h1>
   </div>
         </body> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
 }
+
 
