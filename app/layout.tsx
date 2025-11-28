@@ -24,9 +24,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={logo} type="image/jpeg" />
       </head>
-      {/* <body
+      <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
-      > */}
+      > 
         {/* <div className="w-full h-screen flex items-center justify-center">
           <img
             className="w-1/2 h-screen object-contain"
@@ -34,15 +34,16 @@ export default function RootLayout({
             alt=""
           />
         </div> */}
-        {/* <Navbar /> */}
-        {/* {children} */}
-        <body>  
+        <Navbar />
+        {children}
+        {/* <body>  
         <div className="w-full h-[100vh] bg-black flex justify-center items-center">
     <h1 className="text-white text-3xl">We Will Be Back Soon</h1>
   </div>
-        </body>
-        {/* <Footer /> */}
-      {/* </body> */}
+        </body> */}
+        <Footer />
+      </body>
     </html>
   );
 }
+
