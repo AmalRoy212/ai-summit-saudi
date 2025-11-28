@@ -71,9 +71,10 @@ export default function Home() {
            <EventName />
          </div> */}
          {/* <ContactUs /> */}
-         <FooterHolder />
+         {/* <FooterHolder /> */}
        </div>
       </main>
     );
 }
+
 
