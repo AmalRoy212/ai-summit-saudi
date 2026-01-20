@@ -65,7 +65,7 @@ const EventsPage: React.FC = () => {
           </Link>
         </div> */}
       </div>
-      <FooterHolder/>
+      {/* <FooterHolder/> */}
     </div>
   );
 };
