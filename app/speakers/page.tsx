@@ -39,7 +39,7 @@ const sponsorsPage: React.FC = () => {
       >
         <SpeakersEnquiryForm/>
       </div>
-      <FooterHolder/>
+      {/* <FooterHolder/> */}
     </div>
   );
 };
