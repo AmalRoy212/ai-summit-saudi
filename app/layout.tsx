@@ -34,7 +34,7 @@ export default function RootLayout({
             alt=""
           />
         </div> */}
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         {/* <body>  
         <div className="w-full h-[100vh] bg-black flex justify-center items-center">
@@ -46,5 +46,6 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 
