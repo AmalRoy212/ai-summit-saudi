@@ -39,9 +39,10 @@ const sponsorsPage: React.FC = () => {
       >
         <SponsorEnquiryForm/>
       </div>
-      <FooterHolder/>
+      {/* <FooterHolder/> */}
     </div>
   );
 };
 
 export default sponsorsPage;
+
